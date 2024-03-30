@@ -32,8 +32,10 @@ body * {
   color: var(--text-color);
 }
 #container {
-    width: 360px;
+    width: 100%px;
+    max-width: 588px;
     margin: 56px auto 0px auto;
+    padding: 0 24px;
 }
 
 #profile {
@@ -145,3 +147,13 @@ footer {
     font-size: 14px;
     text-decoration-style: none;
 }
+
+@media (min-width:700px) {
+    :root {
+        --bg-ul: url(./assets/DarkBG.png);
+    }
+
+    .light {
+        --bg-ul: url(./assets/LightBG.png);
+    }
+}    

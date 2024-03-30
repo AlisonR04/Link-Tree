@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: rgb(255, 255, 255);
+    --bg-ul: url(./assets/darkmb.png);
+    --stroke: rgba(221, 157, 8, 0.5);
+    --surface: rgba(255, 255, 255, 0.1);
+    --switch: url(./assets/rocket-outline.svg);
+}
+
+.light {
+    --text-color: rgb(8, 8, 8);
+    --bg-ul: url(./assets/LightBG.png);
+    --stroke: rgba(27, 20, 4, 0.5);
+    --surface: rgba(0, 0, 0, 0.05);
+    --switch: url(./assets/power-outline.svg);
+}
+
+body {
+    background-image: var(--bg-ul);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+body * {
+  font-family: "Playfair Display", serif;
+  color: var(--text-color);
+}
+#container {
+    width: 360px;
+    margin: 56px auto 0px auto;
+}
+
+#profile {
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img {
+    width: 112px;
+}
+
+#profile p {
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 36px;
+  margin-top: 8px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
+
+ul li a {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    border-radius: 16px;
+    background: var(--surface);
+    border: 1px solid var(--stroke);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.6s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid var(--stroke);
+}
+
+#switch {
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+}
+#switch button {
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 50%;
+    background: white var(--switch) no-repeat center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+
+}
+
+.light #switch button {
+    right: 0;
+    left: 0;
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface);
+    border: 1px solid var(--stroke);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 9999px;
+}
+
+#social {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding: 24px 0;
+    font-size: 32px;
+
+}
+
+#social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 16px;
+    transition: background 0.5s;
+}
+
+#social a:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+    text-decoration-style: none;
+}

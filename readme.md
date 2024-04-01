@@ -10,8 +10,7 @@ Link-Tree feita por mim, com o aúxilio direto da plataforma Rocktseat, em seu c
 - [Contribuição](#contribuição)
 
 ## Demo
-
-![Dark Mode]()
+![DarkMode](https://github.com/AlisonR04/Link-Tree/blob/7493c5212468ca62dd59d957221744296d08dce1/assets/TEMPLATE%201.jpg)
 ![Light Mode]()
 
 ## Tecnologias Utilizadas

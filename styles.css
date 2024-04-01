@@ -150,10 +150,10 @@ footer {
 
 @media (min-width:700px) {
     :root {
-        --bg-ul: url(./assets/DarkBG.png);
+        --bg-ul: url(./assets/DarkBG.jpg);
     }
 
     .light {
-        --bg-ul: url(./assets/LightBG.png);
+        --bg-ul: url(./assets/LightBGM.jpg);
     }
 }    
